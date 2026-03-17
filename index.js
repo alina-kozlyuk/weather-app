@@ -3,5 +3,5 @@ import{a as c,i as a}from"./assets/vendor-0JmyGMd6.js";(function(){const r=docum
       <p>🌡️ Температура: ${r}°C</p>
       <p>💨 Вітер: ${o} км/год</p>
     </div>
-  `;u.innerHTML=i}function p(){u.innerHTML=""}function m(){d.classList.remove("hidden")}function h(){d.classList.add("hidden")}const g={form:document.querySelector(".form")};g.form.addEventListener("submit",n=>{n.preventDefault();const r=n.target.elements.city.value.trim();if(!r){a.error({message:"Введіть, будь ласка, місто",position:"topRight"});return}p(),m(),l(r).then(o=>{h(),f(o)}).catch(()=>{a.error({message:"Місто не знайдено",position:"topRight"})})});
+  `;u.innerHTML=i}function p(){u.innerHTML=""}function m(){d.classList.remove("hidden")}function h(){d.classList.add("hidden")}const g={form:document.querySelector("#search-form")};g.form.addEventListener("submit",n=>{n.preventDefault();const r=n.target.elements.city.value.trim();if(!r){a.error({message:"Введіть, будь ласка, місто",position:"topRight"});return}p(),m(),l(r).then(o=>{h(),f(o)}).catch(()=>{a.error({message:"Місто не знайдено",position:"topRight"})})});
 //# sourceMappingURL=index.js.map
