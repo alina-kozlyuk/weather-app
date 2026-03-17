@@ -1,20 +1,20 @@
 import iziToast from "izitoast";
 import "izitoast/dist/css/iziToast.min.css";
 
-import { getWeatherByCity } from "./js/weather-api";
-import { createWeatherCard, clearWeather, showLoader, hideLoader } from "./js/render-functions";
+import { getWeatherByCity } from "./js/weather-api.js";
+import { createWeatherCard, clearWeather, showLoader, hideLoader } from "./js/render-functions.js";
 
 
 
 const refs = {
-    form: document.querySelector('.form'),
-    
+    form: document.querySelector('#search-form'),
 }
 
 refs.form.addEventListener('submit', e => {
     e.preventDefault();
 
     const city = e.target.elements.city.value.trim();
+
 
     if (!city) {
         iziToast.error({
