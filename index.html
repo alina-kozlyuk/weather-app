@@ -5,22 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla App Template</title>
     <script type="module" crossorigin src="/weather-app/index.js"></script>
-    <link rel="modulepreload" crossorigin href="/weather-app/assets/vendor-DQvd0HNi.js">
-    <link rel="stylesheet" crossorigin href="/weather-app/assets/vendor-DumFYO8Z.css">
-    <link rel="stylesheet" crossorigin href="/weather-app/assets/index-Bwm7QJui.css">
+    <link rel="modulepreload" crossorigin href="/weather-app/assets/vendor-0JmyGMd6.js">
+    <link rel="stylesheet" crossorigin href="/weather-app/assets/vendor-DnveWo0P.css">
+    <link rel="stylesheet" crossorigin href="/weather-app/assets/index-CaoZyx7Z.css">
   </head>
+ 
   <body>
-    <main>
-      <form class="form">
-        <label>
-        <input type="text" name="search-text" placeholder="Search images..." class="search-input" required>
-        </label>
-        <button type="submit" class="search-button">
-          Search
-        </button>
+    <div class="container">
+  
+      <h1 class="title">🌦️ Weather App</h1>
+  
+      
+      <form id="search-form" class="form">
+        <input type="text" name="city" placeholder="Введи місто..." class="input" />
+        <button type="submit" class="button">Пошук</button>
       </form>
-      <div class="loader"></div>
-       <ul class="gallery"></ul>
-    </main>
+  
+     
+      <div id="loader" class="loader hidden"></div>
+  
+      
+      <div id="weather-container" class="weather-container"></div>
+  
+    </div>
+  </body>
   </body>
 </html>
